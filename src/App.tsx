@@ -1,4 +1,6 @@
 import { useState } from "react"
+import List from "./components/List"
+import "./App.css"
 
 interface PeopleObj {
   person: {
@@ -12,24 +14,24 @@ interface PeopleObj {
 function App() {
   const [people, setPeople] = useState<PeopleObj["person"]>([
     {
-      name: "Koe",
+      name: "Kobe",
       age: 32,
       note: "The best player",
-      url: "",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/440px-Kobe_Bryant_2014.jpg",
     },
     {
-      name: "Chloe",
+      name: "Shaq ",
       age: 26,
       note: "The random entry",
-      url: "",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Shaquille_O%27Neal_October_2017_%28cropped%29.jpg/440px-Shaquille_O%27Neal_October_2017_%28cropped%29.jpg",
     },
   ])
-
-  people.map((person) => {
-    return person.age
-  })
-
-  return <div>Hello world</div>
+  return (
+    <div className="App">
+      <h1>List of invitees</h1>
+      <List people={people} />
+    </div>
+  )
 }
 
 export default App
