@@ -12,7 +12,7 @@ interface PeopleObj {
 }
 
 function App() {
-  const [people, setPeople] = useState<PeopleObj["person"]>([
+  const [people] = useState<PeopleObj["person"]>([
     {
       name: "Kobe",
       age: 32,
