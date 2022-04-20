@@ -17,7 +17,7 @@ function App() {
       name: "Kobe",
       age: 32,
       note: "The best player",
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/440px-Kobe_Bryant_2014.jp",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/440px-Kobe_Bryant_2014.jpg",
     },
     {
       name: "Shaq ",
